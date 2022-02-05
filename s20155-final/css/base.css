@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+/* ベースとなるスタイル
+-------------------------------------------- */
+* {
+	background-color: #FFEAE1;
+	font-size: 14pt;
+	color: #333333;
+}
+
+/* ヘッダーのスタイル
+-------------------------------------------- */
+#header {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	/* サイズ, 配置 */
+	width: 1280px;
+	height: 80px;
+	/* padding-left: 100px; */
+	/* padding-right: 100px; */
+}
+
+div.hd_logo {
+	/* サイズ, 配置 */
+	width: 132px;
+	height: 44px;
+}
+
+div.hd_navi {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+div.navi_item {
+	/* サイズ, 配置 */
+	margin-left: 20px;
+	margin-right: 20px;
+	display:inline-block;
+	/* 装飾 */
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+div.navi_action {
+	/* サイズ, 配置 */
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	/* 装飾 */
+	border-radius: 100vh; /* viewport height */
+	background-color: #64250A;
+	color: #FFFFFF;
+	display:inline-block;
+}
+
+/* キービジュアル
+-------------------------------------------- */
+#key_image {
+	background-color: transparent;
+	text-align : center
+}
+
+/* メインエリアのベーススタイル
+-------------------------------------------- */
+#main {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* サイズ, 配置 */
+	width: 1080px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h1.contents_title {
+	/* サイズ, 配置 */
+	margin-bottom: 25px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	display:inline-block;
+	/* 装飾 */
+	font-size: 36pt;
+	font-weight: bolder;
+	border-bottom: solid 5px #64250A;
+}
+
+/* メインエリア-Concept
+-------------------------------------------- */
+div.concept {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* サイズ, 配置 */
+	/* margin-top: 100px; */
+	margin-bottom: 80px;
+	margin-top: 50px;
+}
+
+div.concept_contents {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0px;
+	/* サイズ, 配置 */
+	width: 1080px;
+}
+
+div.concept_text {
+	/* 設定なし */
+}
+
+div.concept_copy {
+	/* サイズ, 配置 */
+	margin-bottom: 24px;
+	/* 装飾 */
+	font-size: 30pt;
+	font-weight: bold;
+	animation-name: fadeInAnime;/*1で解説*/
+	animation-fill-mode:forwards;/*2で解説*/
+	animation-duration:3s;/*3で解説*/
+	/*4で解説*/
+	animation-timing-function:ease;/*5で解説*/
+	animation-delay: 0s;/*6で解説*/
+	animation-direction:normal;/*7で解説*/
+}
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+div.concept_detail {
+	/* サイズ, 配置 */
+	width: 525px;
+	animation-name: fadeInAnime;/*1で解説*/
+animation-fill-mode:forwards;/*2で解説*/
+animation-duration:3s;/*3で解説*/
+/*4で解説*/
+animation-timing-function:ease;/*5で解説*/
+animation-delay: 0s;/*6で解説*/
+animation-direction:normal;/*7で解説*/
+}
+/*1で解説*/
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+div.concept_image {
+	/* サイズ, 配置 */
+	width: 496px;
+
+
+}
+
+.concept_image img {
+	border-radius: 20px;
+}
+
+/* メインエリア-News
+-------------------------------------------- */
+
+div.news {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* サイズ, 配置 */
+	width: 1080px;
+	margin-bottom: 25px;
+	margin-top: 50px;
+	animation-name: fadeInAnime;/*1で解説*/
+	animation-fill-mode:forwards;/*2で解説*/
+	animation-duration:3s;/*3で解説*/
+	/*4で解説*/
+	animation-timing-function:ease;/*5で解説*/
+	animation-delay: 0s;/*6で解説*/
+	animation-direction:normal;/*7で解説*/
+}
+
+div.news_contents {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	/* サイズ, 配置 */
+	width: 998px;
+}
+
+div.news_item {
+	/* flexbox関連 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* サイズ, 配置 */
+	width: 300px;
+}
+
+div.news_item_image {
+	/* サイズ, 配置 */
+	width: 300px;
+	position: relative;
+}
+
+.news_item_image img {
+	border-radius: 200px;
+}
+
+div.news_category {
+	/* サイズ,　配置 */
+	position: absolute;
+	display:inline-block;
+	padding: 5px;
+	top: 0px;
+	right: 0px;
+	/* 装飾 */
+	background-color: #64250A;
+	color: #FFFFFF;
+}
+
+div.news_item_title {
+	/* サイズ, 配置 */
+	width: 300px;
+	/* 装飾 */
+	font-size: 16pt;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+div.news_item_text {
+	/* サイズ, 配置 */
+	width: 300px;
+}
+
+/* フッターエリア
+-------------------------------------------- */
+#footer {
+	/* flexbox関連 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* サイズ, 配置 */
+	width: 1280px;
+	height: 40px;
+	/* 装飾 */
+	background-color: #64250A;
+	font-size: 12px;
+}
+
+div.footer_copyright {
+	/* 装飾 */
+	background-color: inherit;
+	color: #FFFFFF;
+}
+
+input[type="email"]{
+	padding: 10px;
+	width: 65%;
+	color:#999;
+	border:1px solid #999;
+	}
+	textarea{
+	padding: 10px;
+	height: 100px;
+	color:#999;
+	font-size: 14px;
+	width: 65%;
+	border:1px solid #999;
+	}
+	button{
+	background: #5250e0;
+	color: white;
+	font-size:16px;
+	font-weight:bold;
+	padding: 10px 20px;
+	margin: 0 5px;
+	}
+
+/*FontAwesomeを使用しています。*/
+.header-6 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+}
+
+.box {
+  box-sizing: border-box;
+}
+
+/* ========== header ========== */
+.box-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.sp-nav {
+  display: none;
+}
+
+.box-nav {
+  height: 40px;
+}
+
+/* ========== nav ========== */
+.inner-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.menu {
+  padding: 0 4em;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: #00b5ad;
+}
+
+.en,
+.jp {
+  margin: 0;
+  text-align: center;
+}
+
+.en {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.jp {
+  margin-top: 0.5em;
+  font-size: 0.5em;
+}
+
+
+
+/* ========== Smart Phone ========== */
+@media screen and (max-width: 480px) {
+  .header-6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 0.8em;
+  }
+
+  .box-nav {
+    display: none;
+  }
+
+  .sp-nav {
+    display: block;
+  }
+
+  .box-logo {
+    height: 60px;
+  }
+
+  .logo-img {
+    width: 70px;
+  }
+}
